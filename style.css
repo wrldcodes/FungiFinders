@@ -277,7 +277,7 @@
 
     > span {
       display: block;
-      font-size: var(--font-size-heading-xl);
+      font-size: var(--font-size-heading-l);
       color: var(--text-brand);
     }
   }
@@ -311,6 +311,10 @@
   .button:focus-visible {
     background: var(--background-accent-light);
     color: var(--text-high-contrast);
+  }
+  .third-hero{
+    font-size:  var(--font-size-heading-regular) ;
+    font-family: var(--ff-body);
   }
   .site-footer {
     text-align: center;
@@ -358,7 +362,10 @@
   .section-title {
     font-size: var(--font-size-heading-regular);
   }
+  .section-title--compact {
+    font-size: var(--section-title-compact-font-size, var(--font-size-heading-sm));
 
+  }
   .background-base {
     background-color: var(--background-base);
   }
