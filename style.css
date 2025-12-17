@@ -255,7 +255,8 @@
   .primary-navigation {
     ul {
       display: flex;
-      gap: 2rem;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -263,6 +264,37 @@
     a {
       text-decoration: none;
     }
+    [aria-controls="primary-navigation"] {
+     display: none;
+   }
+  }
+
+  @media (width < 720px) {
+  .primary-navigation {
+    position: absolute;
+
+    flex-direction: column;
+    gap: 0;
+
+    padding: 2rem;
+    background: var(--background-accent-main);
+    border-radius: 0 0 0 var(--border-radius-2);
+  }
+
+  .primary-navigation li {
+    margin-block-end: 2rem;
+  }
+
+  .primary-navigation li:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--background-accent-light);
+    margin-block-end: inherit;
+  }
+  .primary-navigation a {
+    /* style the links */
+  }
   }
   .hero {
     text-align: center;
