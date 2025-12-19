@@ -252,49 +252,64 @@
     justify-content: space-between;
     gap: 0.5rem 2rem;
   }
+  [aria-controls="primary-nav"] {
+    z-index: 100;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    img {
+      border-radius: 0;
+    }
+  }
+  [aria-controls="primary-nav"]{
+    display: none;
+  }
   .primary-navigation {
     ul {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem 2rem;
-      margin: 0;
-      padding: 0;
-      list-style: none;
     }
     a {
       text-decoration: none;
     }
-    [aria-controls="primary-navigation"] {
-     display: none;
-   }
   }
 
-  @media (width < 720px) {
-  .primary-navigation {
-    position: absolute;
+ 
 
-    flex-direction: column;
-    gap: 0;
+  @media (width < 760px) {
+    .primary-navigation {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      background-color: var(--background-accent-main);
+      padding: 2rem;
+      border-radius: 0 0 0 var(--border-radius-2);
 
-    padding: 2rem;
-    background: var(--background-accent-main);
-    border-radius: 0 0 0 var(--border-radius-2);
+      ul {
+        gap: 0;
+        flex-direction: column;
+      }
+      li + li {
+        border-top: 2px solid var(--background-accent-light);
+        margin-block-start: 1.5rem;
+        padding-block-start: 1.5rem;
+      }
+    }
   }
-
-  .primary-navigation li {
-    margin-block-end: 2rem;
-  }
-
-  .primary-navigation li:not(:last-of-type)::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: var(--background-accent-light);
-    margin-block-end: inherit;
-  }
-  .primary-navigation a {
-    /* style the links */
-  }
+   
+    @media (width < 760px) {
+     [aria-controls="primary-nav"]{
+        display: block;
+      }
+     [aria-expanded="true"] ~ .primary-navigation {
+        display: block;
+      }
+    }
   }
   .hero {
     text-align: center;
@@ -344,8 +359,8 @@
     background: var(--background-accent-light);
     color: var(--text-high-contrast);
   }
-  .third-hero{
-    font-size:  var(--font-size-heading-regular) ;
+  .third-hero {
+    font-size: var(--font-size-heading-regular);
     font-family: var(--ff-body);
   }
   .site-footer {
@@ -370,7 +385,7 @@
     font-family: var(--ff-heading);
     font-weight: 700;
   }
-}
+
 @layer utilities {
   .visually-hidden {
     clip: rect(0 0 0 0);
@@ -395,8 +410,10 @@
     font-size: var(--font-size-heading-regular);
   }
   .section-title--compact {
-    font-size: var(--section-title-compact-font-size, var(--font-size-heading-sm));
-
+    font-size: var(
+      --section-title-compact-font-size,
+      var(--font-size-heading-sm)
+    );
   }
   .background-base {
     background-color: var(--background-base);
