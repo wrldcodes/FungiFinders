@@ -25,124 +25,138 @@
         </button>
         <nav id="primary-nav" class="primary-navigation">
           <ul class="" role="list">
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Mushroom guide</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="index.html">Discover</a></li>
+            <li><a href="mushroomguide.html">Mushroom guide</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li class="theme-toggle-mobile">
+              <button aria-label="toggle theme" id="mobile-theme-toggle" class="theme-toggle-btn">
+                
+                <span class="theme-label">Dark mode</span>
+              </button>
+            </li>
           </ul>
         </nav>
+        <div class="themes">
+          <button aria-label="dark mode" aria-controls="toggle-dark-mode" hidden>
+            <img src="/assets/dark_mode_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="dark mode icon">
+          </button>
+          <button aria-label="light mode" aria-controls="toggle-light-mode">
+            <img src="/assets/light_mode_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="light mode icon">
+          </button>
+        </div>
       </div>
     </div>
-    <main>
-      <section class="hero section" data-padding="compact">
-        <div class="wrapper flow">
-          <h1 class="hero__title">Discover the World of
-            <span>Mushroom Foraging</span>
-          </h1>
-          <div class="wrapper flow" data-width="narrow">
-            <p>Mushroom foraging is the art and science of identifying and collecting wild mushrooms.</p>
-            <p>It's a practice that combines outdoor exploration botanical knowledge, and culinary adventure. Foragers
-              venture into
-              forests, fields, and even urban green spaces to discover these hidden treasures.</p>
-            <p>But beware – this hobby requires careful study and respect for nature, as some mushrooms can be dangerous
-              if
-              misidentified.</p>
-          </div>
+  </header>
+  <main>
+    <section class="first-hero section" data-padding="compact">
+      <div class="wrapper flow">
+        <h1 class="hero__title">Discover the World of
+          <span>Mushroom Foraging</span>
+        </h1>
+        <div class="wrapper flow" data-width="narrow">
+          <p>Mushroom foraging is the art and science of identifying and collecting wild mushrooms.</p>
+          <p>It's a practice that combines outdoor exploration botanical knowledge, and culinary adventure. Foragers
+            venture into
+            forests, fields, and even urban green spaces to discover these hidden treasures.</p>
+          <p>But beware – this hobby requires careful study and respect for nature, as some mushrooms can be dangerous
+            if
+            misidentified.</p>
         </div>
-      </section>
-      <section class="section" data-padding="compact">
-        <div class="wrapper">
+      </div>
+    </section>
+    <section class=" hero section" data-padding="compact">
+      <div class="wrapper">
 
-          <div class="flow">
-            <h2 class="section-title">The joys of mushroom foraging</h2>
-            <p>Foraging for mushrooms can be a rewarding experience for many reasons. People may venture off into the
-              woods to forage
-              for mushrooms because it allows them to connect with nature, enjoy the thrill of the hunt, and savor the
-              satisfaction of
-              finding a hidden culinary treasure.</p>
-            <div class="equal-columns ">
-              <!-- 3 column and always give a good description for ur alt text for text readers -->
-              <div class=" card">
-                <img src="/assets/outdoor-exploration.webp" alt="outdoor-fungi">
-                <h3 class="card__title">Outdoor Exploration</h3>
-                <p>Mushroom foraging takes you off the beaten path and into the heart of nature. Learn to read the
-                  landscape, identifying
-                  prime mushroom habitats from lush forest floors to sun-dappled meadows. Every expedition is a new
-                  adventure, with the
-                  potential for exciting discoveries around every tree and under every log.</p>
-              </div>
-              <div class="card">
-                <img src="/assets/botanical-expertise.webp" alt="botanical-expertise">
-                <h3 class="card__title">Botanical Expertise</h3>
-                <p>Dive into the intricate world of fungal biology. Discover the unique structures of mushrooms, from
-                  caps to gills to
-                  spores. Learn to use field guides and identification keys to distinguish between species. With
-                  practice, you'll start to
-                  see the forest in a whole new light, recognizing the vital role fungi play in ecosystem health.</p>
-              </div>
-              <div class="card">
-                <img src="/assets/culinary-delight.webp" alt="culinary-delight">
-                <h3 class="card__title">Culinary Delights</h3>
-                <p>Transform your foraged finds into delectable dishes. Many edible mushrooms offer unique flavors and
-                  textures that can
-                  elevate your cooking. From the earthy porcini to the delicate chanterelle, each variety brings its
-                  own character to the
-                  table. Explore recipes, preservation techniques, and the joy of cooking with nature's bounty.</p>
-              </div>
+        <div class="flow">
+          <h2 class="section-title">The joys of mushroom foraging</h2>
+          <p>Foraging for mushrooms can be a rewarding experience for many reasons. People may venture off into the
+            woods to forage
+            for mushrooms because it allows them to connect with nature, enjoy the thrill of the hunt, and savor the
+            satisfaction of
+            finding a hidden culinary treasure.</p>
+          <div class="equal-columns ">
+            <!-- 3 column and always give a good description for ur alt text for text readers -->
+            <div class=" card">
+              <img src="/assets/outdoor-exploration.webp" alt="outdoor-fungi">
+              <h3 class="card__title">Outdoor Exploration</h3>
+              <p>Mushroom foraging takes you off the beaten path and into the heart of nature. Learn to read the
+                landscape, identifying
+                prime mushroom habitats from lush forest floors to sun-dappled meadows. Every expedition is a new
+                adventure, with the
+                potential for exciting discoveries around every tree and under every log.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/botanical-expertise.webp" alt="botanical-expertise">
+              <h3 class="card__title">Botanical Expertise</h3>
+              <p>Dive into the intricate world of fungal biology. Discover the unique structures of mushrooms, from
+                caps to gills to
+                spores. Learn to use field guides and identification keys to distinguish between species. With
+                practice, you'll start to
+                see the forest in a whole new light, recognizing the vital role fungi play in ecosystem health.</p>
+            </div>
+            <div class="card">
+              <img src="/assets/culinary-delight.webp" alt="culinary-delight">
+              <h3 class="card__title">Culinary Delights</h3>
+              <p>Transform your foraged finds into delectable dishes. Many edible mushrooms offer unique flavors and
+                textures that can
+                elevate your cooking. From the earthy porcini to the delicate chanterelle, each variety brings its
+                own character to the
+                table. Explore recipes, preservation techniques, and the joy of cooking with nature's bounty.</p>
             </div>
           </div>
-
-        </div>
-      </section>
-      <section class="section  background-accent">
-        <div class="wrapper flow" data-width="narrow">
-          <h2 class="section-title">Start your <span class="text-brand">Foraging Adventure!</span></h2>
-          <p>Whether you're seeking a deeper connection with nature, a new outdoor hobby, or simply love the idea of
-            finding your own
-            food, mushroom foraging offers a uniquely rewarding experience.</p>
-        </div>
-      </section>
-      <section class="section background-extra-dark ">
-
-        <!-- two column -->
-        <div class="wrapper equal-columns " data-gap="large" data-vertical-alignment="centered">
-          <img src="/assets/get-to-know.webp" alt="identifying-mushroom">
-          <div class="grid-flow ">
-            <h2 class="section-title section-title--compact">Get to know your mushrooms</h2>
-            <p>Successful and safe mushroom foraging begins with a deep understanding of the species you'll encounter
-              in
-              the wild - not
-              just what the edible ones look like, but their toxic look-alikes, seasonal patterns, and preferred
-              habitats.</p>
-            <p>It can feel like a big task, but we’ve got a handy reference guide to help you out!
-            </p>
-            <a class="button" href="#">
-              Reference Guide
-            </a>
-          </div>
         </div>
 
-      </section>
-      <section class="section ">
-        <div class="wrapper equal-columns">
-          <div class="grid-flow">
-            <h2 class="section-title">Connect with Nature</h2>
-            <p>Experience the beauty of the great outdoors while foraging for mushrooms with fellow enthusiasts.</p>
-            <a href="#" class="button">
-              Learn More <span class="visually-hidden">
-                about mushrooms with our helpful reference guide
-              </span>
-            </a>
-          </div>
-          <img src="/assets/nature.webp" alt="mushroom-in-the-wild">
-        </div>
-      </section>
-      <footer class="site-footer">
-        <h3 class="site-footer__title">Happy Foraging</h3>
-        <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
-      </footer>
+      </div>
+    </section>
+    <section class=" thirds-hero section  ">
+      <div class="wrapper flow" data-width="narrow">
+        <h2 class="section-title">Start your <span class="text-brand">Foraging Adventure!</span></h2>
+        <p>Whether you're seeking a deeper connection with nature, a new outdoor hobby, or simply love the idea of
+          finding your own
+          food, mushroom foraging offers a uniquely rewarding experience.</p>
+      </div>
+    </section>
+    <section class=" 4th-hero section background-extra-dark ">
 
-    </main>
-  </header>
+      <!-- two column -->
+      <div class="wrapper equal-columns " data-gap="large" data-vertical-alignment="centered">
+        <img src="/assets/get-to-know.webp" alt="identifying-mushroom">
+        <div class="grid-flow ">
+          <h2 class="section-title section-title--compact">Get to know your mushrooms</h2>
+          <p>Successful and safe mushroom foraging begins with a deep understanding of the species you'll encounter
+            in
+            the wild - not
+            just what the edible ones look like, but their toxic look-alikes, seasonal patterns, and preferred
+            habitats.</p>
+          <p>It can feel like a big task, but we’ve got a handy reference guide to help you out!
+          </p>
+          <a class="button" href="#">
+            Reference Guide
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <section class=" hero section ">
+      <div class="wrapper equal-columns">
+        <div class="grid-flow">
+          <h2 class="section-title">Connect with Nature</h2>
+          <p>Experience the beauty of the great outdoors while foraging for mushrooms with fellow enthusiasts.</p>
+          <a href="#" class="button">
+            Learn More <span class="visually-hidden">
+              about mushrooms with our helpful reference guide
+            </span>
+          </a>
+        </div>
+        <img src="/assets/nature.webp" alt="mushroom-in-the-wild">
+      </div>
+    </section>
+    <footer class="site-footer">
+      <h3 class="site-footer__title">Happy Foraging</h3>
+      <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
+    </footer>
+
+  </main>
 </body>
 
 </html>
